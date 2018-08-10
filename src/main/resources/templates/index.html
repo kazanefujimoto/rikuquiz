@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8" />
-    <title>Listing Players - meglove</title>
+    <title>Listing Players - rikuquiz</title>
     <!-- ① -->
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <script src="/js/jquery.js"></script>
@@ -20,7 +20,7 @@
         </thead>
         <tbody>
         <!-- ② -->
-        <tr th:each="mob:${rikus}" th:object="${riku}">
+        <tr th:each="riku:${riku}" th:object="${riku}">
             <!-- ③ -->
             <td th:text="*{name}"></td>
             <!-- ④ -->
@@ -28,7 +28,7 @@
         </tr>
         </tbody>
     </table>
-    <a class="btn btn-default" href="/mobs/new">新規作成</a>
+    <a class="btn btn-default" href="/riku/new">新規作成</a>
     <div class="pull-right">
         <a class="btn btn-default" href="/">HOME</a>
     </div>

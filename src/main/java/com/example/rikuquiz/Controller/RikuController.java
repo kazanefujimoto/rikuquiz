@@ -20,7 +20,7 @@ public class RikuController {
     @GetMapping()
     public String index(Model model) {
         List<Riku> rikus = rikuService.findAll();
-        model.addAttribute("rikus", rikus);
+        model.addAttribute("riku", rikus);
         return "riku/index";
     }
 
